@@ -25,34 +25,105 @@
   "sources": {
     "github": [
       {
-        "type": "user_events",
-        "username": "torvalds",
+        "type": "repo_releases",
+        "owner": "openai",
+        "repo": "openai-python",
         "enabled": true
       },
       {
         "type": "repo_releases",
-        "owner": "astral-sh",
-        "repo": "uv",
+        "owner": "anthropics",
+        "repo": "anthropic-sdk-python",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "google",
+        "repo": "generative-ai-python",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "mistralai",
+        "repo": "mistral-common",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "meta-llama",
+        "repo": "llama-models",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "ollama",
+        "repo": "ollama",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "huggingface",
+        "repo": "transformers",
+        "enabled": true
+      },
+      {
+        "type": "user_events",
+        "username": "karpathy",
+        "enabled": true
+      },
+      {
+        "type": "user_events",
+        "username": "ylecun",
         "enabled": true
       }
     ],
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 20,
+      "fetch_top_stories": 30,
       "min_score": 100
     },
     "rss": [
+      {
+        "name": "OpenAI Blog",
+        "url": "https://openai.com/blog/rss.xml",
+        "enabled": true,
+        "category": "llm-releases"
+      },
+      {
+        "name": "Anthropic Blog",
+        "url": "https://www.anthropic.com/rss.xml",
+        "enabled": true,
+        "category": "llm-releases"
+      },
+      {
+        "name": "Google DeepMind Blog",
+        "url": "https://deepmind.google/blog/rss.xml",
+        "enabled": true,
+        "category": "llm-releases"
+      },
+      {
+        "name": "HuggingFace Blog",
+        "url": "https://huggingface.co/blog/feed.xml",
+        "enabled": true,
+        "category": "llm-releases"
+      },
+      {
+        "name": "Mistral Blog",
+        "url": "https://mistral.ai/feed.xml",
+        "enabled": true,
+        "category": "llm-releases"
+      },
+      {
+        "name": "OpenRouter Blog",
+        "url": "https://openrouter.ai/blog/feed",
+        "enabled": true,
+        "category": "llm-rankings"
+      },
       {
         "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
         "enabled": true,
         "category": "ai-tools"
-      },
-      {
-        "name": "LWN.net (subscriber full-text)",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": false,
-        "category": "linux"
       }
     ],
     "reddit": {
@@ -65,21 +136,30 @@
           "time_filter": "day",
           "fetch_limit": 15,
           "min_score": 50
-        }
-      ],
-      "users": [
+        },
         {
-          "username": "iamthatis",
+          "subreddit": "LocalLLaMA",
           "enabled": true,
-          "sort": "new",
-          "fetch_limit": 10
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 15,
+          "min_score": 30
+        },
+        {
+          "subreddit": "artificial",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 10,
+          "min_score": 50
         }
       ],
-      "fetch_comments": 5
+      "users": [],
+      "fetch_comments": 3
     },
     "twitter": {
       "enabled": false,
-      "users": ["karpathy", "ylecun"],
+      "users": ["karpathy", "ylecun", "sama", "demishassabis"],
       "fetch_limit": 10,
       "fetch_reply_text": false,
       "max_replies_per_tweet": 3,
@@ -90,24 +170,15 @@
       "enabled": false,
       "fetch_filings": false,
       "filings_provider": "sec",
-      "watchlists": [
-        {
-          "name": "megacaps",
-          "enabled": true,
-          "provider": "yfinance",
-          "fetch_limit": 20,
-          "category": "equities",
-          "symbols": ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "META", "TSLA"]
-        }
-      ]
+      "watchlists": []
     },
     "ossinsight": {
-      "enabled": false,
+      "enabled": true,
       "period": "past_24_hours",
-      "languages": ["All", "Python", "TypeScript"],
-      "keywords": [],
-      "min_stars": 10,
-      "max_items": 30
+      "languages": ["All", "Python"],
+      "keywords": ["llm", "ai", "language-model", "agent"],
+      "min_stars": 50,
+      "max_items": 20
     }
   },
   "filtering": {
