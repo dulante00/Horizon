@@ -119,12 +119,12 @@
     "default_group_limit": null
   },
   "webhook": {
-    "enabled": false,
+    "enabled": true,
     "url_env": "HORIZON_WEBHOOK_URL",
     "delivery": "summary",
     "overview_position": "first",
-    "platform": "generic",
-    "layout": "markdown",
+    "platform": "feishu",
+    "layout": "collapsible",
     "fallback_layout": "markdown",
     "languages": null,
     "request_body": {

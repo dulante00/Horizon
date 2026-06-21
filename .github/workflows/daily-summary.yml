@@ -35,6 +35,7 @@ jobs:
           # Modify these based on your data/config.github.json provider settings
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+          HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
           LWN_KEY: ${{ secrets.LWN_KEY }}
         run: uv run horizon --hours 48
 
