@@ -9,8 +9,7 @@
     "max_tokens": 4096,
     "throttle_sec": 0,
     "analysis_concurrency": 1,
-    "enrichment_concurrency": 1,
-    "languages": ["en", "zh"]
+    "enrichment_concurrency": 1
   },
   "email": {
     "enabled": false,
@@ -120,12 +119,12 @@
     "default_group_limit": null
   },
   "webhook": {
-    "enabled": true,
+    "enabled": false,
     "url_env": "HORIZON_WEBHOOK_URL",
     "delivery": "summary",
     "overview_position": "first",
-    "platform": "feishhu",
-    "layout": "collapsible",
+    "platform": "generic",
+    "layout": "markdown",
     "fallback_layout": "markdown",
     "languages": null,
     "request_body": {
