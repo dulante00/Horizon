@@ -90,12 +90,6 @@
         "category": "llm-releases"
       },
       {
-        "name": "Anthropic Blog",
-        "url": "https://www.anthropic.com/rss.xml",
-        "enabled": true,
-        "category": "llm-releases"
-      },
-      {
         "name": "Google DeepMind Blog",
         "url": "https://deepmind.google/blog/rss.xml",
         "enabled": true,
@@ -108,14 +102,8 @@
         "category": "llm-releases"
       },
       {
-        "name": "Mistral Blog",
-        "url": "https://mistral.ai/feed.xml",
-        "enabled": true,
-        "category": "llm-releases"
-      },
-      {
         "name": "OpenRouter Blog",
-        "url": "https://openrouter.ai/blog/feed",
+        "url": "https://openrouter.ai/blog/feed.xml",
         "enabled": true,
         "category": "llm-rankings"
       },
