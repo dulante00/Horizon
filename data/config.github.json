@@ -68,6 +68,60 @@
         "enabled": true
       },
       {
+        "type": "repo_releases",
+        "owner": "vllm-project",
+        "repo": "vllm",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "langchain-ai",
+        "repo": "langchain",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "microsoft",
+        "repo": "autogen",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "run-llama",
+        "repo": "llama_index",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "crewAIInc",
+        "repo": "crewAI",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "BerriAI",
+        "repo": "litellm",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "langgenius",
+        "repo": "dify",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "langfuse",
+        "repo": "langfuse",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "mem0ai",
+        "repo": "mem0",
+        "enabled": true
+      },
+      {
         "type": "user_events",
         "username": "karpathy",
         "enabled": true
@@ -109,10 +163,34 @@
         "category": "llm-rankings"
       },
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
+        "name": "Anthropic News",
+        "url": "https://www.anthropic.com/news/rss.xml",
         "enabled": true,
-        "category": "ai-tools"
+        "category": "llm-releases"
+      },
+      {
+        "name": "Mistral AI News",
+        "url": "https://mistral.ai/news/rss.xml",
+        "enabled": true,
+        "category": "llm-releases"
+      },
+      {
+        "name": "LangChain Blog",
+        "url": "https://blog.langchain.dev/rss/",
+        "enabled": true,
+        "category": "agent-frameworks"
+      },
+      {
+        "name": "Dify Blog",
+        "url": "https://dify.ai/blog/rss.xml",
+        "enabled": true,
+        "category": "agent-products"
+      },
+      {
+        "name": "GitHub Trending - Daily",
+        "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "enabled": true,
+        "category": "github-trending"
       }
     ],
     "reddit": {
@@ -133,14 +211,6 @@
           "time_filter": "day",
           "fetch_limit": 15,
           "min_score": 30
-        },
-        {
-          "subreddit": "artificial",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 50
         }
       ],
       "users": [],
@@ -164,8 +234,8 @@
     "ossinsight": {
       "enabled": true,
       "period": "past_24_hours",
-      "languages": ["All", "Python"],
-      "keywords": ["llm", "ai", "language-model", "agent"],
+      "languages": ["All", "Python", "TypeScript"],
+      "keywords": ["llm", "agent", "rag", "inference", "eval", "mcp", "tool-calling", "workflow"],
       "min_stars": 50,
       "max_items": 20
     }

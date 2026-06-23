@@ -145,68 +145,28 @@ class HorizonOrchestrator:
 
             # 7. Generate and save daily summaries for each configured language
             today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            failed_languages: List[str] = []
             for lang in self.config.ai.languages:
-                summarizer = DailySummarizer()
-                summary = await summarizer.generate_summary(important_items, today, len(all_items), language=lang)
-
-                # Save to data/summaries/
-                summary_path = self.storage.save_daily_summary(today, summary, language=lang)
-                self.console.print(f"💾 Saved {lang.upper()} summary to: {summary_path}\n")
-
-                # Copy to docs/ for GitHub Pages
                 try:
-                    from pathlib import Path
-
-                    post_filename = f"{today}-summary-{lang}.md"
-                    posts_dir = Path("docs/_posts")
-                    posts_dir.mkdir(parents=True, exist_ok=True)
-
-                    dest_path = posts_dir / post_filename
-
-                    # Add Jekyll front matter
-                    front_matter = (
-                        "---\n"
-                        "layout: default\n"
-                        f"title: \"Horizon Summary: {today} ({lang.upper()})\"\n"
-                        f"date: {today}\n"
-                        f"lang: {lang}\n"
-                        "---\n\n"
-                    )
-
-                    # Strip leading H1 header to avoid duplication with Jekyll title
-                    summary_content = summary
-                    first_line = summary_content.strip().split("\n")[0]
-                    if first_line.startswith("# "):
-                        parts = summary_content.split("\n", 1)
-                        if len(parts) > 1:
-                            summary_content = parts[1].strip()
-
-                    with open(dest_path, "w", encoding="utf-8") as f:
-                        f.write(front_matter + summary_content)
-
-                    self.console.print(f"📄 Copied {lang.upper()} summary to GitHub Pages: {dest_path}\n")
-                except Exception as e:
-                    self.console.print(f"[yellow]⚠️  Failed to copy {lang.upper()} summary to docs/: {e}[/yellow]\n")
-
-                # Send email if configured
-                if self.email_manager and self.config.email and self.config.email.enabled:
-                    self.console.print(f"📧 Sending {lang.upper()} email summary...")
-                    subscribers = self.storage.load_subscribers()
-                    subject = f"Horizon Summary ({lang.upper()}) - {today}"
-                    self.email_manager.send_daily_summary(summary, subject, subscribers)
-
-                # Send webhook notification if configured
-                if self.webhook_notifier:
-                    await self.webhook_notifier.send_daily_summary(
-                        summary=summary,
-                        important_items=important_items,
-                        all_items_count=len(all_items),
-                        date=today,
+                    await self._process_language_outputs(
                         lang=lang,
-                        summarizer=summarizer,
+                        important_items=important_items,
+                        all_items=all_items,
+                        today=today,
+                    )
+                except Exception as e:
+                    failed_languages.append(lang.upper())
+                    self.console.print(
+                        f"[yellow]⚠️  {lang.upper()} output failed: {type(e).__name__}: {e}[/yellow]\n"
                     )
 
-            self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")
+            if failed_languages:
+                self.console.print(
+                    "[bold yellow]⚠️ Horizon completed with language-specific failures:[/bold yellow] "
+                    + ", ".join(failed_languages)
+                )
+            else:
+                self.console.print("[bold green]✅ Horizon completed successfully![/bold green]")
             usage = get_usage_snapshot()
             if usage.total_tokens > 0:
                 self.console.print(
@@ -707,3 +667,72 @@ class HorizonOrchestrator:
         summarizer = DailySummarizer()
 
         return await summarizer.generate_summary(items, date, total_fetched, language=language)
+
+    async def _process_language_outputs(
+        self,
+        lang: str,
+        important_items: List[ContentItem],
+        all_items: List[ContentItem],
+        today: str,
+    ) -> None:
+        """Generate, persist, and deliver summary artifacts for one language."""
+        self.console.print(f"📝 Generating {lang.upper()} daily summary...")
+        summarizer = DailySummarizer()
+        summary = await summarizer.generate_summary(
+            important_items,
+            today,
+            len(all_items),
+            language=lang,
+        )
+
+        summary_path = self.storage.save_daily_summary(today, summary, language=lang)
+        self.console.print(f"💾 Saved {lang.upper()} summary to: {summary_path}\n")
+
+        self._copy_summary_to_docs(today=today, lang=lang, summary=summary)
+
+        if self.email_manager and self.config.email and self.config.email.enabled:
+            self.console.print(f"📧 Sending {lang.upper()} email summary...")
+            subscribers = self.storage.load_subscribers()
+            subject = f"Horizon Summary ({lang.upper()}) - {today}"
+            self.email_manager.send_daily_summary(summary, subject, subscribers)
+
+        if self.webhook_notifier:
+            await self.webhook_notifier.send_daily_summary(
+                summary=summary,
+                important_items=important_items,
+                all_items_count=len(all_items),
+                date=today,
+                lang=lang,
+                summarizer=summarizer,
+            )
+
+    def _copy_summary_to_docs(self, today: str, lang: str, summary: str) -> None:
+        """Copy one rendered summary into docs/_posts for GitHub Pages."""
+        from pathlib import Path
+
+        post_filename = f"{today}-summary-{lang}.md"
+        posts_dir = Path("docs/_posts")
+        posts_dir.mkdir(parents=True, exist_ok=True)
+
+        dest_path = posts_dir / post_filename
+
+        front_matter = (
+            "---\n"
+            "layout: default\n"
+            f"title: \"Horizon Summary: {today} ({lang.upper()})\"\n"
+            f"date: {today}\n"
+            f"lang: {lang}\n"
+            "---\n\n"
+        )
+
+        summary_content = summary
+        first_line = summary_content.strip().split("\n")[0]
+        if first_line.startswith("# "):
+            parts = summary_content.split("\n", 1)
+            if len(parts) > 1:
+                summary_content = parts[1].strip()
+
+        with open(dest_path, "w", encoding="utf-8") as f:
+            f.write(front_matter + summary_content)
+
+        self.console.print(f"📄 Copied {lang.upper()} summary to GitHub Pages: {dest_path}\n")
