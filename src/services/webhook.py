@@ -220,6 +220,7 @@ class WebhookNotifier:
 
     def __init__(self, config: WebhookConfig, console=None):
         self.config = config
+        self.display_name = config.display_name.strip() or "Horizon"
         if console is None:
             try:
                 from rich.console import Console
@@ -348,23 +349,23 @@ class WebhookNotifier:
         if lang == "zh":
             if item_count == 0:
                 return (
-                    f"# Horizon 每日速递 - {date}\n\n"
+                    f"# {self.display_name} - {date}\n\n"
                     f"> 已分析 {all_items_count} 条内容，暂无达到重要性阈值的资讯。"
                 )
             return (
-                f"# Horizon 每日速递 - {date}\n\n"
+                f"# {self.display_name} - {date}\n\n"
                 f"> 从 {all_items_count} 条内容中筛选出 {item_count} 条重要资讯。\n\n"
                 "点击下方新闻面板即可在飞书内展开阅读全文。"
             )
 
         if item_count == 0:
             return (
-                f"# Horizon Daily - {date}\n\n"
+                f"# {self.display_name} - {date}\n\n"
                 f"> Analyzed {all_items_count} items, but none met the importance threshold."
             )
 
         return (
-            f"# Horizon Daily - {date}\n\n"
+            f"# {self.display_name} - {date}\n\n"
             f"> Selected {item_count} important items from {all_items_count} fetched items.\n\n"
             "Expand the panels below to read the full briefing inside Feishu/Lark."
         )
@@ -415,9 +416,9 @@ class WebhookNotifier:
                     "title": {
                         "tag": "plain_text",
                         "content": (
-                            f"Horizon {date} 折叠日报"
+                            f"{self.display_name} {date} 折叠日报"
                             if lang == "zh"
-                            else f"Horizon {date} Collapsible Daily"
+                            else f"{self.display_name} {date} Collapsible Daily"
                         ),
                     },
                     "template": "blue",
@@ -465,9 +466,9 @@ class WebhookNotifier:
                 {
                     **base_vars,
                     "message_title": (
-                        f"Horizon {date} 折叠日报"
+                        f"{self.display_name} {date} 折叠日报"
                         if lang == "zh"
-                        else f"Horizon {date} Collapsible Daily"
+                        else f"{self.display_name} {date} Collapsible Daily"
                     ),
                     "message_kind": "collapsible",
                     "summary": self._build_feishu_collapsible_overview(
@@ -498,9 +499,9 @@ class WebhookNotifier:
             overview_message = {
                 **base_vars,
                 "message_title": (
-                    f"Horizon {date} 总览"
+                    f"{self.display_name} {date} 总览"
                     if lang == "zh"
-                    else f"Horizon {date} Overview"
+                    else f"{self.display_name} {date} Overview"
                 ),
                 "message_kind": "overview",
                 "summary": overview,
@@ -536,7 +537,9 @@ class WebhookNotifier:
             {
                 **base_vars,
                 "message_title": (
-                    f"Horizon {date} 日报" if lang == "zh" else f"Horizon {date} Daily"
+                    f"{self.display_name} {date} 日报"
+                    if lang == "zh"
+                    else f"{self.display_name} {date} Daily"
                 ),
                 "message_kind": "summary",
                 "summary": summary,
@@ -767,7 +770,7 @@ class WebhookNotifier:
                 "all_items": 0,
                 "result": "failed",
                 "timestamp": str(int(datetime.now(timezone.utc).timestamp())),
-                "message_title": "Horizon generation failed",
+                "message_title": f"{self.display_name} generation failed",
                 "message_kind": "failure",
                 "summary": f"generation failed: {error_message}",
             }

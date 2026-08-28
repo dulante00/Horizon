@@ -135,6 +135,8 @@ class ContentAnalyzer:
             source=f"{item.source_type.value}",
             author=item.author or "Unknown",
             url=str(item.url),
+            source_class=item.metadata.get("source_class") or "unspecified",
+            credibility=item.metadata.get("credibility") or "unrated",
             content_section=content_section,
             discussion_section=discussion_section
         )

@@ -1,0 +1,44 @@
+name: Daily LLM Security Summary
+
+on:
+  schedule:
+    - cron: '17 22 * * *' # 06:17 Asia/Shanghai; staggered from the existing digest
+  workflow_dispatch:
+
+concurrency:
+  group: daily-llm-security-summary
+  cancel-in-progress: false
+
+jobs:
+  security-summary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Validate required secrets
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          HORIZON_SECURITY_WEBHOOK_URL: ${{ secrets.HORIZON_SECURITY_WEBHOOK_URL }}
+        run: |
+          test -n "$MINIMAX_API_KEY" || { echo "Missing MINIMAX_API_KEY"; exit 1; }
+          test -n "$HORIZON_SECURITY_WEBHOOK_URL" || { echo "Missing HORIZON_SECURITY_WEBHOOK_URL"; exit 1; }
+
+      - name: Generate and send security digest
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          HORIZON_SECURITY_WEBHOOK_URL: ${{ secrets.HORIZON_SECURITY_WEBHOOK_URL }}
+        run: uv run horizon --data-dir data/security --hours 30

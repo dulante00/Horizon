@@ -25,6 +25,8 @@ LABELS = {
         "discussion": "Discussion",
         "references": "References",
         "tags": "Tags",
+        "source_class": "Class",
+        "credibility": "Credibility",
         "selected_items": "From {total} items, {selected} important content pieces were selected",
         "empty_analyzed": "Analyzed {total} items, but none met the importance threshold.",
         "empty_body": (
@@ -45,6 +47,8 @@ LABELS = {
         "discussion": "社区讨论",
         "references": "参考链接",
         "tags": "标签",
+        "source_class": "类别",
+        "credibility": "可信度",
         "selected_items": "从 {total} 条内容中筛选出 {selected} 条重要资讯。",
         "empty_analyzed": "已分析 {total} 条内容，但没有达到重要性阈值的条目。",
         "empty_body": (
@@ -206,6 +210,10 @@ class DailySummarizer:
                 day = item.published_at.strftime("%d").lstrip("0")
                 source_parts.append(item.published_at.strftime(f"%b {day}, %H:%M"))
         source_line = " \u00b7 ".join(source_parts)  # ·
+        if meta.get("source_class"):
+            source_line += f" · {labels['source_class']}：{meta['source_class']}"
+        if meta.get("credibility"):
+            source_line += f" · {labels['credibility']}：{meta['credibility']}"
 
         discussion_url = meta.get("discussion_url")
         if discussion_url:

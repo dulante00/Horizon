@@ -203,28 +203,10 @@
         "category": "llm-rankings"
       },
       {
-        "name": "Anthropic News",
-        "url": "https://www.anthropic.com/news/rss.xml",
-        "enabled": true,
-        "category": "llm-releases"
-      },
-      {
-        "name": "Mistral AI News",
-        "url": "https://mistral.ai/news/rss.xml",
-        "enabled": true,
-        "category": "llm-releases"
-      },
-      {
         "name": "LangChain Blog",
         "url": "https://blog.langchain.dev/rss/",
         "enabled": true,
         "category": "agent-frameworks"
-      },
-      {
-        "name": "Dify Blog",
-        "url": "https://dify.ai/blog/rss.xml",
-        "enabled": true,
-        "category": "agent-products"
       },
       {
         "name": "量子位",
@@ -274,6 +256,9 @@
         "OpenAI",
         "AnthropicAI",
         "GoogleDeepMind",
+        "GoogleAI",
+        "GoogleCloudTech",
+        "Google",
         "sama",
         "gdb",
         "KevinWeil",

@@ -138,6 +138,8 @@ class RSSSourceConfig(BaseModel):
     url: HttpUrl
     enabled: bool = True
     category: Optional[str] = None
+    source_class: Optional[str] = None  # policy, standards, attacks, vendor, research, community
+    credibility: Optional[str] = None  # T1 authoritative, T2 reliable, T3 clue
 
 
 class RedditSubredditConfig(BaseModel):
@@ -297,6 +299,7 @@ class WebhookConfig(BaseModel):
     languages: Optional[List[str]] = (
         None  # Optional language filter for webhook delivery; defaults to all AI languages
     )
+    display_name: str = "Horizon"
     enabled: bool = False
 
     @field_validator("delivery")

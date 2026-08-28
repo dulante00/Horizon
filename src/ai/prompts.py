@@ -70,6 +70,8 @@ Title: {title}
 Source: {source}
 Author: {author}
 URL: {url}
+Source class: {source_class}
+Source credibility: {credibility}
 {content_section}
 {discussion_section}
 

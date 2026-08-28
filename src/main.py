@@ -37,6 +37,11 @@ def main():
 
     parser = argparse.ArgumentParser(description="Horizon - AI-Driven Information Aggregation System")
     parser.add_argument("--hours", type=int, help="Force fetch from last N hours")
+    parser.add_argument(
+        "--data-dir",
+        default="data",
+        help="Directory containing config.json and generated summaries (default: data)",
+    )
     args = parser.parse_args()
 
     try:
@@ -44,7 +49,7 @@ def main():
         load_dotenv()
 
         # Ensure we're in the project directory or use data/ in current dir
-        data_dir = Path("data")
+        data_dir = Path(args.data_dir)
 
         # Initialize storage manager
         storage = StorageManager(data_dir=str(data_dir))

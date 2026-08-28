@@ -821,6 +821,31 @@ def _make_item(title="Test Item", url="https://example.com/test", score=8.0):
 
 
 class TestSendDailySummary:
+    def test_custom_display_name_separates_digest_title(self):
+        os.environ[_TEST_URL_ENV] = _TEST_URL
+        config = WebhookConfig(
+            enabled=True,
+            url_env=_TEST_URL_ENV,
+            delivery="summary",
+            display_name="大模型安全日报",
+            platform="feishu",
+            layout="collapsible",
+        )
+        notifier = WebhookNotifier(config)
+
+        messages = notifier.build_daily_summary_messages(
+            summary="安全摘要",
+            important_items=[_make_item()],
+            all_items_count=3,
+            date="2026-04-24",
+            lang="zh",
+            summarizer=DailySummarizer(),
+        )
+
+        assert messages[0]["message_title"] == "大模型安全日报 2026-04-24 折叠日报"
+        assert messages[0]["message_kind"] == "collapsible"
+        del os.environ[_TEST_URL_ENV]
+
     def test_summary_delivery_calls_notify_once(self):
         """delivery='summary' sends a single notify call with message_kind='summary'."""
         os.environ[_TEST_URL_ENV] = _TEST_URL
