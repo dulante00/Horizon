@@ -5,404 +5,296 @@ date: 2026-08-29
 lang: en
 ---
 
-> From 59 items, 23 important content pieces were selected
+> From 43 items, 15 important content pieces were selected
 
 ---
 
-1. [HTMX 4.0 Released: A Major Milestone for Hypermedia-Driven Web Development](#item-1) ⭐️ 8.0/10
-2. [Just the rumour of a bug is enough to find an exploit these days](#item-2) ⭐️ 8.0/10
-3. [GLM-5.3 is now open-weight](#item-3) ⭐️ 8.0/10
-4. [Audit Finds 64 of 443 GGUF Quants Silently Mislabeled Due to llama-quantize Fallback](#item-4) ⭐️ 8.0/10
-5. [LangChain 1.4.0a2 Adds First-Party MCP Adapter](#item-5) ⭐️ 7.0/10
-6. [vphone-cli: Open-Source Virtual iPhone via Apple's Virtualization.framework](#item-6) ⭐️ 7.0/10
-7. [U.S. sanctions against the A/I Collective](#item-7) ⭐️ 7.0/10
-8. [Judge rules Trump administration’s blacklisting of Anthropic was illegal](#item-8) ⭐️ 7.0/10
-9. [Luanti removed from Google Play due to baseless AI copyright notice](#item-9) ⭐️ 7.0/10
-10. [OpenAI to End Model Supply to Cursor After SpaceX Acquisition](#item-10) ⭐️ 7.0/10
-11. [Google DeepMind releases Gemini Omni 1.1 Flash with enhanced developer controls](#item-11) ⭐️ 7.0/10
-12. [Piloting the world's first double-blind AI evaluations](#item-12) ⭐️ 7.0/10
-13. [SOTA GGUFs Released for Qwen3 27B via GSQ + RCO Quantization at 2.5–3.0 bpw](#item-13) ⭐️ 7.0/10
-14. [Micron: HBM Requires Three Times More Wafer Area Than DDR5](#item-14) ⭐️ 7.0/10
-15. [GUIs Should Be Fully Keyboard-Driven](#item-15) ⭐️ 6.0/10
-16. [Inception-style curved map for turn-by-turn directions](#item-16) ⭐️ 6.0/10
-17. [The Twelve-Factor App Gets a 2025 Refresh](#item-17) ⭐️ 6.0/10
-18. [Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training](#item-18) ⭐️ 6.0/10
-19. [Open ASR Leaderboard Adds First Global South Language](#item-19) ⭐️ 6.0/10
-20. [给AI Agent装上“科学常识”，端到端仿真成功率从0拉到84%](#item-20) ⭐️ 6.0/10
-21. [ROCm 10.0: A Decade of Open Compute, Built for the Age of Agentic AI](#item-21) ⭐️ 6.0/10
-22. [Running Qwen3.8-Flash on RTX 3090: Detailed Benchmarks and VRAM Optimization](#item-22) ⭐️ 6.0/10
-23. [I benchmarked 9 open models on spotting fake sources during agentic search (DeepSeek V4, Qwen 3.8, Nemotron 3 Ultra)](#item-23) ⭐️ 6.0/10
+1. [OpenAI Winds Down Model Contract with Cursor After SpaceX Acquisition](#item-1) ⭐️ 8.0/10
+2. [Tencent Open-Sources Hy4 Preview: 770B MoE LLM with 1M Context](#item-2) ⭐️ 7.0/10
+3. [Samsung's Processing-in-Memory (PIM)](#item-3) ⭐️ 7.0/10
+4. [vphone-cli: Boot a Virtual iPhone via Apple's Virtualization.framework](#item-4) ⭐️ 7.0/10
+5. [GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)](#item-5) ⭐️ 7.0/10
+6. [I accidentally turned LLM memory into program analysis](#item-6) ⭐️ 7.0/10
+7. [The Open ASR Leaderboard Adds Its First Global South Language](#item-7) ⭐️ 7.0/10
+8. [只靠一问一答，就能抓出大模型幻觉，准确率88% | ICML'26](#item-8) ⭐️ 7.0/10
+9. [LangChain 1.4.0a2 Adds First-Party MCP Adapter via FastMCP](#item-9) ⭐️ 6.0/10
+10. [DHS Uses Obscure Customs Law to Snoop on Journalists and Non-Profits](#item-10) ⭐️ 6.0/10
+11. [Tencent Compresses Hy4-preview from 1.5TB to ~200GB GGUF, Retaining 98% Performance](#item-11) ⭐️ 6.0/10
+12. [Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)](#item-12) ⭐️ 6.0/10
+13. [Curated Index of 50 Open llama.cpp PRs for CPU/Hybrid Inference](#item-13) ⭐️ 6.0/10
+14. [Terminal Bench 4.0 Released: GLM-5.3 Rivals Top Coding Agents](#item-14) ⭐️ 6.0/10
+15. [Why the Ling-3.0-flash-Fin benchmark card reveals more about methodology than rankings](#item-15) ⭐️ 6.0/10
 
 ---
 
 <a id="item-1"></a>
-## [HTMX 4.0 Released: A Major Milestone for Hypermedia-Driven Web Development](https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released) ⭐️ 8.0/10
+## [OpenAI Winds Down Model Contract with Cursor After SpaceX Acquisition](https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex) ⭐️ 8.0/10
 
-HTMX 4.0 has been released as a major version update to the popular hypermedia-driven JavaScript library, succeeding earlier versions and its predecessor intercooler.js. The new version includes compatibility improvements such as `hx-alpine-compat` to smooth over integration issues with Alpine.js. This release marks a significant milestone in the hypermedia-driven application (HDA) movement, which challenges the dominance of complex JavaScript SPA frameworks like React by returning to server-rendered HTML with progressive enhancement. As one of the most influential libraries promoting this paradigm, HTMX 4.0's evolution affects thousands of developers seeking simpler, more maintainable web architectures. The release introduces `hx-alpine-compat` to ease interoperability between HTMX and Alpine.js, and the project has spawned derivative works including Datastar. Alternative sanctioned projects like alpine-ajax.js offer smaller footprints for developers who need fewer features.
+OpenAI announced it will wind down its contract providing proprietary AI models to Cursor, the AI coding assistant, following Cursor's acquisition by SpaceXAI. The contract termination has a hard deadline of November 12, 2026, marking a public end to the model-supply relationship between the two companies. This decision signals a significant strategic shift in AI model provider relationships, as OpenAI is cutting off a major AI coding platform that had reached a $29.3 billion valuation and $3 billion in annual recurring revenue. The move highlights how corporate consolidation in the AI industry is reshaping supply-chain dynamics between foundation model providers and downstream application developers. Cursor, originally built by Anysphere, Inc., was integrated into SpaceXAI from June 2026 and became a wholly owned subsidiary in August 2026. The product itself is a fork of Visual Studio Code that integrates AI features for code generation, and losing OpenAI model access could force Cursor to either rely on alternative model providers or develop proprietary alternatives.
 
-hackernews · rmsaksida · Aug 28, 13:28 · [Discussion](https://news.ycombinator.com/item?id=49478178)
+rss · OpenAI Blog · Aug 28, 06:00
 
-**Background**: HTMX is a lightweight client-side JavaScript library that extends HTML with attributes enabling AJAX requests, CSS transitions, WebSockets, and Server-Sent Events directly in markup, without requiring users to write JavaScript. It is a central tool in the Hypermedia-Driven Application (HDA) architecture, which combines the simplicity of traditional Multi-Page Applications (MPAs) with the interactivity of Single-Page Applications (SPAs) by having the server return HTML fragments rather than JSON data. Related libraries in this ecosystem include Unpoly, Hotwire, Turbo, Hyperview, and complementing tools like Alpine.js and hyperscript.
+**Background**: Cursor is one of the fastest-growing AI coding tools, using large language models to help developers write code through natural-language instructions. AI coding assistants typically depend on access to foundation models from providers like OpenAI, Anthropic, or Google, either through APIs or custom contracts. SpaceXAI, the entity that acquired Cursor, is part of Elon Musk's broader AI ecosystem, which has previously had public disagreements with OpenAI over AI development philosophies and competitive positioning.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://htmx.org/">htmx - high power tools for html</a></li>
-<li><a href="https://htmx.org/essays/hypermedia-driven-applications/">Hypermedia-Driven Applications - htmx Building Hypermedia-Driven Applications with HTMX and Beyond Why HTMX and the 'Hypermedia-Driven' Architecture are ... Hypermedia On Whatever you'd Like - htmx Introduction - Hypermedia Systems Hypermedia-Driven Web Applications With Htmx</a></li>
-<li><a href="https://gadnex.github.io/posts/hypermedia-driven-applications/">William Gadney - Hypermedia Driven Applications</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cursor_(code_editor)">Cursor (code editor)</a></li>
+<li><a href="https://www.explainx.ai/blog/openai-ends-cursor-partnership-spacex-acquisition-august-2026">OpenAI Ends Cursor Model Access Nov 12 — Migration Plan | explainx.ai Blog | explainx.ai</a></li>
+<li><a href="https://www.allblogthings.com/2026/08/api-neutrality-is-dead-inside-openai-s-hard-breakup-with-spacex-owned-cursor.html">API Neutrality is Dead: Inside OpenAI’s Hard Breakup with SpaceX-Owned Cursor</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community sentiment is largely positive, with developers praising HTMX's simplicity and the joy it brings to web development, often pairing it with Go and SQLite for rapid prototyping. However, a contrarian perspective was raised by a developer with .NET and Angular experience, who found HTMX forced them to mix presentation concerns with business logic on the backend. Several commenters also noted HTMX's influence on derivative projects like Datastar and its role as a refreshing alternative to unnecessary frontend complexity.
-
-**Tags**: `#htmx`, `#web-development`, `#frontend`, `#hypermedia`, `#release`
+**Tags**: `#OpenAI`, `#Cursor`, `#SpaceX`, `#AI-industry`, `#acquisitions`
 
 ---
 
 <a id="item-2"></a>
-## [Just the rumour of a bug is enough to find an exploit these days](https://anil.recoil.org/notes/rumour-is-the-exploit) ⭐️ 8.0/10
+## [Tencent Open-Sources Hy4 Preview: 770B MoE LLM with 1M Context](https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/) ⭐️ 7.0/10
 
-Article arguing that AI tools have made it trivially easy to find exploits from minimal hints like commit messages or overheard remarks, with community discussion confirming a dramatic surge in low-quality but numerous security disclosures overwhelming open source maintainers.
+Tencent has released and open-sourced Hy4 Preview, a next-generation mixture-of-experts LLM with 770B total parameters (49B active) and a context window exceeding 1 million tokens. Within days of launch, it reportedly processed trillions of tokens on OpenRouter, surpassing the weekly throughput of GLM 5.3, and is priced from $0.000834/1M input tokens. Hy4 Preview represents another major Chinese open-source LLM entering the global model race, with aggressive pricing and a differentiated cache-cost structure (5% vs. the industry-standard 10-20%) that could pressure competitors. Its unusually rapid OpenRouter adoption signals strong real-world developer demand, and Tencent's claim of a recursive self-improvement loop in development points toward a potential paradigm shift in how models are trained. As a MoE model, Hy4 Preview activates only 49B of its 770B parameters per inference, balancing capability with compute efficiency. The claimed recursive self-improvement loop involved the model participating in automating optimization of training methods, data strategies, evaluation frameworks, and low-level operators—proposing approaches, running experiments, and iterating based on results, an early-stage but noteworthy application of the concept.
 
-hackernews · avsm · Aug 28, 15:58 · [Discussion](https://news.ycombinator.com/item?id=49480466)
+hackernews · shenli3514 · Aug 29, 19:33 · [Discussion](https://news.ycombinator.com/item?id=49492632)
 
-**Tags**: `#security`, `#vulnerability-research`, `#AI-LLMs`, `#open-source`, `#exploit-development`
+**Background**: Mixture-of-Experts (MoE) architectures route each input to only a subset of the model's parameters, allowing large total parameter counts at lower inference cost. Prompt caching is an optimization where previously processed tokens are stored and reused at reduced cost; the typical cache discount is 10-20%, making Hy4's 5% notably competitive. Recursive self-improvement is a long-standing AI research concept where a system improves its own design or training process, considered a step toward more autonomous AI development.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/">Tencent Releases and Open-Sources Tencent Hy 4 preview - Tencent</a></li>
+<li><a href="https://huggingface.co/tencent/Hy4-preview">tencent / Hy 4 - preview · Hugging Face</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Recursive_self-improvement">Recursive self-improvement - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community sentiment was largely positive and analytically engaged. minimaxir pointed out Hy4's exceptional early traction on OpenRouter and its competitive 5% cache cost; codethief connected the recursive self-improvement claim to longstanding AI safety concepts; jorl17 reported that the previous Hy3 was nearly indistinguishable from DeepSeek in agentic tasks, raising questions about lineage; and fastball criticized the bar charts in the release for inconsistent ordering and misleading highlighting.
+
+**Tags**: `#ai`, `#llm`, `#open-source`, `#tencent`, `#model-release`
 
 ---
 
 <a id="item-3"></a>
-## [GLM-5.3 is now open-weight](https://huggingface.co/zai-org/GLM-5.3) ⭐️ 8.0/10
+## [Samsung's Processing-in-Memory (PIM)](https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing) ⭐️ 7.0/10
 
-Zhipu AI releases GLM-5.3 as an open-weight model, offering a competitive alternative to leading open-weight models with reportedly better intuition and efficiency than DeepSeek Flash.
+Technical analysis of Samsung's Processing-in-Memory (PIM) architecture presented at Hot Chips, sparking substantive discussion about its practical applicability, historical precedents, and limitations.
 
-hackernews · jeudesprits · Aug 28, 15:20 · [Discussion](https://news.ycombinator.com/item?id=49479878)
+hackernews · ingve · Aug 29, 06:06 · [Discussion](https://news.ycombinator.com/item?id=49487341)
 
-**Tags**: `#open-source-llm`, `#glm-5.3`, `#zhipu-ai`, `#ai-models`, `#hugging-face`
+**Tags**: `#hardware-architecture`, `#processing-in-memory`, `#samsung`, `#ai-accelerators`, `#memory-systems`
 
 ---
 
 <a id="item-4"></a>
-## [Audit Finds 64 of 443 GGUF Quants Silently Mislabeled Due to llama-quantize Fallback](https://www.reddit.com/r/LocalLLaMA/comments/1w11ob5/i_audited_443_gguf_quants_across_25_repos_64_of/) ⭐️ 8.0/10
+## [vphone-cli: Boot a Virtual iPhone via Apple's Virtualization.framework](https://github.com/Lakr233/vphone-cli) ⭐️ 7.0/10
 
-An audit of 443 GGUF quantization files across 25 HuggingFace repositories found that 64 files (about 14%) were silently substituted with higher-bit quantization types by llama-quantize when tensor rows weren't divisible by 256, causing filenames like 'IQ2_XXS' to actually contain ~4.5 bpw data instead of the advertised low-bit recipe. This breaks a fundamental assumption of the local LLM ecosystem — that a GGUF filename reliably indicates its quantization level — affecting user choices around model size, download costs, VRAM requirements, and quality expectations. It particularly impacts MoE architectures with non-256-divisible tensor dimensions, meaning thousands of users may be unknowingly downloading files 1.5x to 2x larger than advertised for low-bit rungs. The fallback originates from llama.cpp PR #3747 (2023) and intentionally substitutes compatible 32-block types (often IQ4_NL for i-quants or Q4_0 for k-quants), but the warning only appears in the quantizer's log, not in the finished GGUF file or its metadata. The auditor released a stdlib-only Python tool using HTTP range requests to read only tensor headers (a few MB) without downloading full model weights; notably, Nemotron-3.5-Lightning had all four IQ2 rungs measuring 4.58 bpw despite labels of 2.06–2.56 bpw, and Qwen3.8-Flash-Next's UD-IQ1_S measured 3.28 bpw instead of 1.56 bpw.
+A new open-source project, vphone-cli, boots a virtual iOS instance by combining Apple's official Virtualization.framework with the real iOS kernel extracted from cloudOS/PCC images, patched together with iOS user-space components to run on Apple silicon hosts. This provides security researchers, app developers, and automation engineers with a native-like iOS environment on macOS without relying on commercial solutions like Corellium or the limited iOS Simulator. It opens doors to large-scale automated UI testing and AI-driven app interaction via its companion vphone-mcp server. Unlike emulation (e.g., Corellium), this approach virtualizes Apple's own iOS kernel rather than reimplementing it, meaning applications can still detect the virtualized environment. During iOS setup, users must avoid Japan or EU regions because the VM cannot satisfy those regions' extra regulatory checks.
 
-reddit · r/LocalLLaMA · /u/Daxfortuna · Aug 28, 20:20
+hackernews · hentrep · Aug 28, 23:02 · [Discussion](https://news.ycombinator.com/item?id=49485267)
 
-**Background**: GGUF is the standard binary file format used by llama.cpp and its ecosystem (including Ollama and LM Studio) to package quantized language models alongside their metadata, supporting 1.58-bit to 8-bit integer quantization as well as float32, float16, and bfloat16 formats. K-quants (introduced May 2023 in PR #1684) and i-quants are improved quantization schemes that require the first tensor dimension to be divisible by 256 to function correctly. When this requirement isn't met — which is common in MoE models with unusual embedding or expert widths — llama-quantize historically replaced those tensors with simpler block types like Q4_0, Q5_0, or Q8_0, a behavior long known but never systematically measured until this audit.
+**Background**: Apple's Virtualization.framework is a native macOS API that lets developers run guest operating systems as virtual machines on Apple silicon Macs, providing near-bare-metal performance through the underlying Hypervisor framework. Apple's Private Cloud Compute (PCC/cloudOS) infrastructure ships iOS kernel images designed to run inside this framework, and projects like Tart have previously demonstrated virtualizing macOS on Apple silicon using the same API. The iOS Simulator, by contrast, is a developer tool that emulates the iOS user interface but shares the host's kernel and is not suitable for testing low-level or security-sensitive behavior.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Llama.cpp">llama . cpp - Wikipedia</a></li>
-<li><a href="https://github.com/ggml-org/llama.cpp/discussions/5063">Even more quantization types ? · ggml-org llama . cpp · Discussion...</a></li>
-<li><a href="https://jonathanding.github.io/llm-learning/en/articles/llama-cpp-quantization/">llama . cpp Quantization Methods | LLM Learning</a></li>
+<li><a href="https://developer.apple.com/documentation/virtualization/virtualize-macos-on-a-mac">Virtualize macOS on a Mac | Apple Developer Documentation</a></li>
+<li><a href="https://news.ycombinator.com/item?id=39059100">Tart: VMs on macOS using Apple's native Virtualization.Framework | Hacker News</a></li>
+<li><a href="https://developer.apple.com/documentation/hypervisor">Hypervisor | Apple Developer Documentation</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit thread (r/LocalLLaMA) highlighted that this issue had been raised before in llama.cpp GitHub Issue #26616, where a user received a 24.5 GB file expecting ~18 GB, prompting a request for a --no-fallback flag. Community sentiment emphasized that the problem is tooling-driven rather than uploader error — every maker with affected repos also had clean ones using the same pipeline — and praised byteshape's practice of reporting measured bpw in filenames as a model for honest labeling.
+**Discussion**: Community members emphasized that vphone-cli is fundamentally different from Corellium (it virtualizes Apple's real iOS kernel instead of emulating hardware) and from the iOS Simulator. Practical users reported using it for regular app testing, highlighted the vphone-mcp integration that lets AI agents take screenshots and navigate the UI, and asked about Appium compatibility. A subtle gotcha surfaced around region selection during setup, since regulatory checks for Japan and the EU cannot be satisfied inside the VM.
 
-**Tags**: `#llama.cpp`, `#GGUF`, `#quantization`, `#local-llm`, `#model-quality`
+**Tags**: `#iOS`, `#virtualization`, `#Apple`, `#security-research`, `#app-testing`
 
 ---
 
 <a id="item-5"></a>
-## [LangChain 1.4.0a2 Adds First-Party MCP Adapter](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.0a2) ⭐️ 7.0/10
+## [GrapheneOS project: pixel 11 no longer supports hardware memory tagging (MTE)](https://bsky.app/profile/grapheneos.org/post/3mua32q4ds22e) ⭐️ 7.0/10
 
-LangChain 1.4.0a2 introduces `langchain.mcp`, a first-party MCP adapter built on top of FastMCP clients that converts any MCP server into LangChain tools usable directly with `create_agent`. It accepts a URL, a local script path, an in-process FastMCP server, a multi-server config, or a hand-built `fastmcp.Client`, with transport automatically inferred. MCP is rapidly becoming a de facto standard for agent-tool integration across the AI ecosystem, supported by Claude, ChatGPT, VS Code, and Cursor. Native first-party support in LangChain removes the need for third-party adapter packages and brings LangChain's most popular agent factory into closer alignment with how tools are increasingly shared and composed. This is an alpha release installed via `pip install "langchain[mcp]==1.4.0a2"`; auth (OAuth, bearer token, or httpx.Auth), opt-in response caching, timeouts, and message handlers are configured on the `fastmcp.Client` passed to the adapter. With multiple servers, tools are namespaced by server name (e.g., `weather_get_forecast`) to prevent collisions, and the `async with` block scopes discovery rather than tool lifetime, so tools remain callable after the context exits.
+GrapheneOS reports that Google's Pixel 11 removes support for ARM Memory Tagging Extension (MTE), a hardware memory safety feature, alongside other regressions like reduced RAM and higher prices.
 
-github · github-actions[bot] · Aug 28, 16:19
+hackernews · 400thecat · Aug 29, 15:26 · [Discussion](https://news.ycombinator.com/item?id=49490702)
 
-**Background**: The Model Context Protocol (MCP) is an open standard introduced by Anthropic in November 2024 to standardize how AI systems and large language models integrate with external tools, systems, and data sources, using a host-client-server architecture where clients talk to servers that expose tools, resources, and prompts. FastMCP is a Pythonic framework for building both MCP servers and clients that abstracts away protocol-level complexities. LangChain is a widely used framework for building LLM-powered applications, and its `create_agent` factory is a high-level API that handles the ReAct loop automatically and lets developers supply a list of tools that the agent can autonomously select and invoke.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Model_Context_Protocol">Model Context Protocol - Wikipedia</a></li>
-<li><a href="https://gofastmcp.com/clients/client">The FastMCP Client - FastMCP</a></li>
-<li><a href="https://reference.langchain.com/python/langchain/agents/factory/create_agent">create _ agent | langchain | LangChain Reference</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#langchain`, `#model-context-protocol`, `#mcp`, `#ai-agents`, `#python`
+**Tags**: `#mobile-security`, `#pixel-11`, `#grapheneos`, `#MTE`, `#hardware-security`
 
 ---
 
 <a id="item-6"></a>
-## [vphone-cli: Open-Source Virtual iPhone via Apple's Virtualization.framework](https://github.com/Lakr233/vphone-cli) ⭐️ 7.0/10
+## [I accidentally turned LLM memory into program analysis](https://pwning.systems/posts/llm-memory-program-analysis/) ⭐️ 7.0/10
 
-Developer Lakr233 has released vphone-cli, an open-source command-line tool that leverages Apple's Virtualization.framework to boot a virtual iPhone directly from an IPSW file. The project fills a gap left by Corellium's transition to a research-only model, offering iOS researchers a free, self-hosted alternative for running and profiling iOS without physical hardware. This project democratizes iOS security research and app profiling by removing the dependency on expensive commercial services like Corellium. It gives independent researchers and developers a new avenue to conduct dynamic analysis, jailbreak research, and application testing on virtualized iOS instances using their own Apple Silicon or Intel-based Macs. The tool requires SIP (System Integrity Protection) to be partially disabled, which can break certain macOS functionality. During iOS setup, users must avoid selecting Japan or the EU as their region, as regulatory checks cannot be satisfied by the VM. Unlike the iOS Simulator, vphone-cli runs actual iOS firmware in a virtualized environment, providing much closer fidelity to real-device behavior.
+A blog post exploring how structured LLM memory representations naturally evolve into program-analysis-like systems, sparking discussion on combining LLMs with formal knowledge structures like Datalog and knowledge graphs.
 
-hackernews · hentrep · Aug 28, 23:02 · [Discussion](https://news.ycombinator.com/item?id=49485267)
+hackernews · matt_d · Aug 28, 23:27 · [Discussion](https://news.ycombinator.com/item?id=49485416)
 
-**Background**: Apple's Virtualization.framework provides high-level APIs for creating and managing virtual machines on Apple Silicon and Intel-based Macs, originally designed for running macOS and Linux guests. Corellium was a popular commercial platform that offered virtualized iOS devices with built-in root access and jailbreaking capabilities, widely used by security researchers. When Corellium restricted its service to research-only use, many independent developers lost affordable access to virtualized iOS environments. An IPSW file is Apple's official iOS firmware restore image, typically used to install or restore iOS on physical devices via iTunes or Finder.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://developer.apple.com/documentation/virtualization">Virtualization | Apple Developer Documentation</a></li>
-<li><a href="https://www.corellium.com/platform">Corellium Platform | Research, Work, Test Arm-Based Devices</a></li>
-<li><a href="https://www.venelx.com/blog/macos-virtualization-framework">INSIDE APPLE'S VIRTUALIZATION.FRAMEWORK: BUILDING LIGHTWEIGHT ...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community sentiment is largely positive, with users praising the project as a valuable free alternative to Corellium for iOS profiling. Discussion points include clarification on regional regulatory checks (Japan/EU) that the VM cannot satisfy, questions about the difference between vphone-cli and the standard iOS Simulator (vphone-cli runs actual iOS firmware), interest in cross-platform support (currently Mac-only), and acknowledgment that the SIP disablement requirement is a notable limitation. One commenter expressed excitement at regaining profiling capabilities lost after Corellium's shift to research-only access.
-
-**Tags**: `#ios`, `#virtualization`, `#apple`, `#security-research`, `#reverse-engineering`
+**Tags**: `#LLM`, `#knowledge-representation`, `#program-analysis`, `#AI-architecture`, `#knowledge-graphs`
 
 ---
 
 <a id="item-7"></a>
-## [U.S. sanctions against the A/I Collective](https://www.inventati.org/) ⭐️ 7.0/10
+## [The Open ASR Leaderboard Adds Its First Global South Language](https://huggingface.co/blog/open-asr-leaderboard-global-south) ⭐️ 7.0/10
 
-U.S. sanctions against Italian privacy-focused hosting provider Autistici/Inventati (A/I Collective) over alleged PKK ties spark significant debate about implications for digital rights, privacy infrastructure, and the precedent of designating service providers as terrorist entities.
+HuggingFace's Open ASR Leaderboard adds its first Global South language, addressing linguistic diversity gaps in speech recognition benchmarking.
 
-hackernews · exiguus · Aug 28, 12:58 · [Discussion](https://news.ycombinator.com/item?id=49477854)
+rss · HuggingFace Blog · Aug 28, 00:00
 
-**Tags**: `#digital-rights`, `#privacy`, `#sanctions`, `#free-speech`, `#infrastructure`
+**Tags**: `#speech-recognition`, `#ASR`, `#linguistic-diversity`, `#HuggingFace`, `#AI-bias`, `#benchmarking`
 
 ---
 
 <a id="item-8"></a>
-## [Judge rules Trump administration’s blacklisting of Anthropic was illegal](https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html) ⭐️ 7.0/10
+## [只靠一问一答，就能抓出大模型幻觉，准确率88% | ICML'26](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247916598&idx=3&sn=d4b7937d5c43888682c10e5905020303) ⭐️ 7.0/10
 
-A federal judge ruled that the Trump administration's blacklisting of Anthropic was illegal, citing insufficient evidence and retaliatory intent against the company's speech.
+An ICML'26 paper proposes a 'human-like criteria detection mechanism' that detects LLM hallucinations through simple Q&A with 88% accuracy, establishing a new baseline for hallucination detection.
 
-hackernews · jbegley · Aug 28, 02:03 · [Discussion](https://news.ycombinator.com/item?id=49473522)
+rss · 量子位 · Aug 29, 05:41
 
-**Tags**: `#AI policy`, `#Anthropic`, `#legal ruling`, `#First Amendment`, `#government procurement`
+**Tags**: `#LLM`, `#hallucination-detection`, `#ICML-2026`, `#evaluation`, `#AI-safety`
 
 ---
 
 <a id="item-9"></a>
-## [Luanti removed from Google Play due to baseless AI copyright notice](https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/) ⭐️ 7.0/10
+## [LangChain 1.4.0a2 Adds First-Party MCP Adapter via FastMCP](https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.0a2) ⭐️ 6.0/10
 
-Open-source voxel game engine Luanti was removed from Google Play after a baseless DMCA notice from Tracer AI (linked to Microsoft's Minecraft team), highlighting ongoing abuse of takedown systems against indie and open-source projects.
+LangChain released version 1.4.0a2 (alpha), introducing a first-party `langchain.mcp` adapter (`MCPAdapter`) that wraps the FastMCP client to convert any MCP server into LangChain agent tools consumable by `create_agent`. It supports a single unified entry point that accepts URLs, local script paths, in-process FastMCP servers, multi-server configs, or pre-built `fastmcp.Client` instances, with transport auto-inferred. This is the first official LangChain integration for MCP, removing the need for community-built bridges and giving LangChain agents a standardized way to consume the growing ecosystem of MCP servers. By delegating connection handling to FastMCP rather than re-implementing it, the adapter inherits FastMCP's auth, caching, timeout, and transport features for free, which lowers friction for building tool-using agents. Auth supports `"oauth"` strings, bearer tokens, or any `httpx.Auth` instance; response caching is opt-in (`cache=True`) and honors server `ttlMs`/`cacheScope` hints, kept in-memory per client; multi-server configs namespace tools as `<server>_<tool>` (e.g. `weather_get_forecast`) to prevent collisions, while single-server connections expose unprefixed names. Tools returned by `get_tools()` retain the adapter's client and remain callable after the `async with` block exits — the context only scopes discovery, and `elicitation="interrupt"` clones the client so user callbacks aren't overwritten.
 
-hackernews · miniBill · Aug 28, 06:33 · [Discussion](https://news.ycombinator.com/item?id=49475079)
+github · github-actions[bot] · Aug 28, 16:19
 
-**Tags**: `#dmca`, `#open-source`, `#copyright`, `#google-play`, `#policy`
+**Background**: The Model Context Protocol (MCP) is an open standard introduced by Anthropic in November 2024 to standardize how AI applications connect to external tools, data sources, and systems, reducing the need for custom integrations per model. FastMCP is the standard Python framework for building MCP servers and clients; its 1.0 version was incorporated into the official MCP Python SDK in 2024. MCP currently defines two real transports: stdio (for local subprocess servers) and Streamable HTTP (which replaced the older HTTP+SSE transport in the 2025-06-18 spec).
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://modelcontextprotocol.io/docs/getting-started/intro">What is the Model Context Protocol (MCP)? - Model Context Protocol</a></li>
+<li><a href="https://gofastmcp.com/">FastMCP : The Framework for MCP - FastMCP</a></li>
+<li><a href="https://modelcontextprotocol.io/specification/2025-06-18/basic/transports">Transports - Model Context Protocol</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#langchain`, `#mcp`, `#model-context-protocol`, `#agent-framework`, `#release-notes`
 
 ---
 
 <a id="item-10"></a>
-## [OpenAI to End Model Supply to Cursor After SpaceX Acquisition](https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex) ⭐️ 7.0/10
+## [DHS Uses Obscure Customs Law to Snoop on Journalists and Non-Profits](https://www.theguardian.com/us-news/2026/aug/29/trump-dhs-1509-summons-records-journalists-nonprofits) ⭐️ 6.0/10
 
-OpenAI has announced it will wind down its contract supplying OpenAI models to Cursor, the AI coding tool, following SpaceX's acquisition of Anysphere, Inc. (the company operating under the Cursor brand). Anysphere is now a subsidiary of SpaceXAI. This decision signals a strategic realignment among major AI players, as OpenAI chooses to discontinue a partnership with a competitor now under SpaceX's umbrella. Developers who rely on Cursor powered by OpenAI models will face changes in their tooling, potentially affecting millions of users in the AI coding assistant market. Cursor is an AI coding agent and software development environment built by Anysphere, Inc., founded in 2022 and headquartered in San Francisco. The tool enables developers to hand off coding tasks to AI agents, and OpenAI's model withdrawal will likely force Cursor to either rely on alternative models or develop its own.
+The Department of Homeland Security (DHS) has been issuing Section 1509 administrative summonses—originally intended for customs investigations—to secretly obtain records from journalists, non-profits, and labor unions. T-Mobile complied with one such summons, handing over six months of phone records covering over 10,000 calls and texts belonging to journalist Fort without notifying her until July, while Google resisted the requests. This represents a significant expansion of surveillance authority that could chill journalism, activism, and union organizing by exposing confidential communications. The willingness of telecom companies to hand over data without judicial oversight raises serious questions about corporate responsibility to protect user privacy and resist questionable government demands. Section 1509 of Title 19 was designed solely for examining records related to the importation of merchandise and customs duties; a 2017 DHS Inspector General report already flagged CBP for misuse of this authority. Importantly, companies are not legally required to comply with a 1509 summons—DHS must go to court to enforce it—meaning resistance is legally available, as Google demonstrated while T-Mobile did not.
 
-rss · OpenAI Blog · Aug 28, 06:00
+hackernews · firefax · Aug 29, 18:44 · [Discussion](https://news.ycombinator.com/item?id=49492219)
 
-**Background**: Cursor is one of the most popular AI-powered code editors, competing in a rapidly growing market alongside tools like GitHub Copilot. OpenAI has historically supplied its foundation models such as GPT-4 to third-party developers and enterprises through API agreements. SpaceX's acquisition of Anysphere brings the AI coding tool under the broader SpaceX corporate umbrella, which also includes xAI, creating a more direct competitive overlap with OpenAI's own interests.
+**Background**: An administrative summons is a legal tool used by government agencies to demand records or testimony, but it is generally less powerful than a subpoena and typically requires a court order to enforce if the recipient refuses. Section 1509 specifically governs customs-related examinations under Title 19 of the U.S. Code, and was originally limited to investigating merchandise importation and duty compliance. The DHS Office of Inspector General warned in 2017 that CBP had been issuing 1509 summonses far outside this intended scope, and the current pattern suggests DHS has continued and expanded this practice under a broader interpretation tied to its customs-enforcement legacy.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Cursor_(code_editor)">Cursor (company) - Wikipedia</a></li>
-<li><a href="https://cursor.com/">AI Coding Agent for Building Ambitious Software | Cursor</a></li>
+<li><a href="https://www.theguardian.com/us-news/2026/aug/29/trump-dhs-1509-summons-records-journalists-nonprofits">Trump’s DHS is using an obscure law to secretly snoop on journalists, non-profits and unions: ‘It’s outrageous’ | Trump administration | The Guardian</a></li>
+<li><a href="https://www.oig.dhs.gov/news/press-releases/2017/11162017/dhs-oig-cites-cbp-misuse-summons-power">DHS OIG Cites CBP for Misuse of Summons Power | Office of Inspector General</a></li>
+<li><a href="https://www.law.cornell.edu/uscode/text/19/1509">19 U.S. Code § 1509 - Examination of books and witnesses | U.S. Code | US Law | LII / Legal Information Institute</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#OpenAI`, `#Cursor`, `#SpaceX`, `#AI-industry`, `#developer-tools`
+**Discussion**: Commenters analyzed the legal strategy behind DHS withdrawing summonses after court challenges—possibly to avoid judicial precedent striking down the practice—and criticized telecom companies for complying without resistance when they had legal grounds to refuse. One commenter pointed out the irony of the DHS budget scale, noting it could alternatively fund healthcare for uninsured children, while another noted Google resisted where T-Mobile did not. There was also tangential promotion of privacy-focused email tools for journalists.
+
+**Tags**: `#privacy`, `#surveillance`, `#civil-liberties`, `#journalism`, `#policy`
 
 ---
 
 <a id="item-11"></a>
-## [Google DeepMind releases Gemini Omni 1.1 Flash with enhanced developer controls](https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/) ⭐️ 7.0/10
+## [Tencent Compresses Hy4-preview from 1.5TB to ~200GB GGUF, Retaining 98% Performance](https://www.reddit.com/r/LocalLLaMA/comments/1w1o324/tencent_compressed_hy4preview_from_15tb_to_about/) ⭐️ 6.0/10
 
-Google DeepMind announced Gemini Omni 1.1 Flash, an updated version of its multimodal model that gives developers a new suite of creative controls and generative video capabilities via API access. This update lowers the barrier for developers to integrate advanced multimodal video generation and editing into their applications, potentially accelerating the adoption of AI-powered video tools across industries. The model supports multimodal inputs including 4K video and exposes flexible video controls through its API, allowing developers to integrate video generation without building a model from scratch; the version bump from 1.0 to 1.1 indicates incremental rather than fundamental architectural changes.
+According to a Reddit report, Tencent has compressed its open-source Hy4-preview model from roughly 1.5TB down to about 200GB in GGUF format while retaining approximately 98% of the original model's performance. If accurate, this level of compression makes a 770B-parameter MoE model far more accessible for local deployment on consumer hardware, dramatically lowering the storage and memory barrier for running frontier-scale open-source models on personal machines. The original Reddit post provides no technical methodology, quantization scheme (e.g., Q2_K, Q4_K_M, IQ series), or benchmark numbers behind the claim, so the 98% figure and the exact final size cannot be independently verified from the source. Hy4-preview itself is a Mixture-of-Experts model with 770B total parameters and 49B active parameters and a 1M+ token context window.
 
-rss · Google DeepMind Blog · Aug 27, 16:11
+reddit · r/LocalLLaMA · /u/RedditUsr2 · Aug 29, 14:31
 
-**Background**: Gemini is a family of multimodal large language models developed by Google DeepMind, originally announced in December 2023 as the successor to LaMDA and PaLM 2. The family includes variants such as Pro, Deep Think, Flash, and Flash Lite, with Flash typically optimized for speed and lower cost. Gemini Omni is a newer multimodal model focused on video generation and editing, allowing users to create and modify videos through natural chat-style prompts. According to Google DeepMind, Gemini Omni Flash was developed in partnership with internal safety, security, and responsibility teams and underwent extensive evaluations and red teaming activities before release.
+**Background**: GGUF is a binary file format created for llama.cpp that supports block-wise quantization, which reduces the numerical precision of model weights to shrink file size and lower memory usage at inference time, with some accuracy trade-off. Tencent Hy4-preview is a large open-source MoE language model released just days before this compression report, characterized by sparse activation (49B out of 770B parameters used per token) and an exceptionally long context window. Compressing such a model aggressively while preserving most of its capability would be a notable result for the local LLM community, which relies on GGUF files to run large models on consumer GPUs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/">Build with Gemini Omni 1 . 1 Flash</a></li>
-<li><a href="https://kie.ai/gemini-omni-1-1-flash">Gemini Omni 1 . 1 Flash API for Multimodal 4K Video | Kie AI</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Gemini_(language_model)">Gemini (language model ) - Wikipedia</a></li>
+<li><a href="https://huggingface.co/tencent/Hy4-preview">tencent/Hy4-preview · Hugging Face</a></li>
+<li><a href="https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/">Tencent Releases and Open-Sources Tencent Hy4 preview - Tencent</a></li>
+<li><a href="https://apxml.com/courses/practical-llm-quantization/chapter-5-quantization-formats-tooling/gguf-format">GGUF File Format Explained (llama.cpp)</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#gemini`, `#google-deepmind`, `#llm`, `#model-update`, `#developer-tools`
+**Tags**: `#model-compression`, `#quantization`, `#Tencent`, `#GGUF`, `#local-llm`
 
 ---
 
 <a id="item-12"></a>
-## [Piloting the world's first double-blind AI evaluations](https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/) ⭐️ 7.0/10
+## [Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)](https://www.reddit.com/r/LocalLLaMA/comments/1w1lq7u/qwen_38_27b_at_50_toks_with_100k_context_on_a/) ⭐️ 6.0/10
 
-Google DeepMind announces the pilot of the world's first double-blind AI evaluations to improve rigor and reduce bias in model assessments.
+A detailed guide for running a Qwen 27B (with Multi-Token Prediction) quantized model at 50 tok/s with 100k context on an RTX 4070 Ti SUPER 16GB, using beellama.cpp with specialized kvarn KV cache quantization.
 
-rss · Google DeepMind Blog · Aug 27, 12:59
+reddit · r/LocalLLaMA · /u/qaf23 · Aug 29, 12:50
 
-**Tags**: `#AI evaluation`, `#DeepMind`, `#research methodology`, `#benchmarking`, `#AI safety`
+**Tags**: `#local-llm`, `#quantization`, `#qwen`, `#gpu-optimization`, `#kv-cache`
 
 ---
 
 <a id="item-13"></a>
-## [SOTA GGUFs Released for Qwen3 27B via GSQ + RCO Quantization at 2.5–3.0 bpw](https://www.reddit.com/r/LocalLLaMA/comments/1w13vse/release_sota_ggufs_for_qwen3827b_gsqrco_at_25_to/) ⭐️ 7.0/10
+## [Curated Index of 50 Open llama.cpp PRs for CPU/Hybrid Inference](https://www.reddit.com/r/LocalLLaMA/comments/1w1uu6d/llamacpp_open_prs_list_cpuramdiskhybrid_related/) ⭐️ 6.0/10
 
-ISTA-DASLab has released three GGUF-quantized versions of Qwen3 27B (referred to as Qwen3.8-27B) at 2.50, 2.75, and 3.00 bits per weight (bpw), ranging from 8.4 to 10.1 GB, using a combined pipeline of GSQ (Gumbel-Softmax Quantization) and RCO (Riemannian Constrained Optimization). The release claims state-of-the-art size-to-accuracy trade-offs, matching or beating the BF16 base on AIME25 (100.00 at 3.00 bpw) and outperforming Unsloth Dynamic quants by up to +10 points on AIME25 at matched ~8.4 GB size. Low-bit quantization is the key bottleneck for running large language models on consumer hardware, and 2–3 bpw is the range where most open-source LLMs degrade sharply. If the claimed results hold, GSQ + RCO could meaningfully narrow the quality gap between lightweight scalar quantization and heavier vector/trellis methods, while remaining drop-in compatible with llama.cpp, Ollama, and LM Studio — directly benefiting the local-LLM community. GSQ is a post-training scalar quantization method that jointly learns per-coordinate grid assignments and per-group scales via a Gumbel-Softmax relaxation, targeting the 2–3 bit regime while remaining GGUF-deployable. RCO uses gradient descent on the task loss directly over a Riemannian manifold to assign a quantization type to every tensor under a strict global size budget, removing the need for per-constraint tuning.
+A Reddit user (pmttyji) compiled a comprehensive list of roughly 50 open pull requests on llama.cpp focused on CPU, RAM, disk, and hybrid inference optimizations, covering topics such as AVX-512/VNNI quantized dot-product kernels, MoE expert caching and streaming from disk, ARM NEON and RISC-V vector paths, NUMA-aware execution, and new quantization formats (STQ1_0, MXFP8, E4M3). These optimizations could materially improve inference performance for users running LLMs on CPU-only or hybrid CPU/GPU setups, particularly those without high-end discrete GPUs. Features like disk-streamed MoE experts and lazy/pinned-hot-experts could dramatically expand the model sizes that can run on consumer hardware with limited VRAM/RAM. Highlights include a claimed 3x VNNI speedup for Q2_0 dot products (#26348), 12-23% tok/s improvements on AVX-VNNI systems (#23309), MoE disk-streaming (#25294), hot-expert pinning (#26414), and a hybrid CPU/GPU MoE expert cache RFC (#24528). Most PRs target x86 AVX2/AVX-512/VNNI, with additional ARM NEON, SVE, RISC-V RVV, and WebAssembly SIMD coverage.
 
-reddit · r/LocalLLaMA · /u/Loginhe · Aug 28, 21:46
+reddit · r/LocalLLaMA · /u/pmttyji · Aug 29, 18:58
 
-**Background**: Quantization reduces the number of bits used to store each model weight, enabling large models to fit in less memory at the cost of some accuracy loss. Scalar quantization (e.g., GPTQ) is fast and simple but suffers at very low bit widths, while vector/trellis methods (e.g., AQLM, QTIP) preserve more accuracy but are heavier to deploy. GGUF is the binary format used by llama.cpp and downstream tools such as Ollama and LM Studio, so any quantization that stays GGUF-compatible is immediately usable by the local-LLM ecosystem. Qwen3 27B is a recent mid-sized open-weight model from Alibaba that is popular for local deployment because it offers strong reasoning performance at a manageable size.
+**Background**: llama.cpp is an open-source C/C++ inference engine for large language models, built on the ggml tensor library, that supports a wide range of quantized model formats stored in GGUF files. Quantization types like Q4_K, Q5_K, Q6_K (k-quants) and IQ-series formats reduce model size and memory requirements at varying accuracy costs. Modern CPUs expose SIMD instruction sets—AVX2, AVX-512, and Intel VNNI—that accelerate low-precision (INT8/ternary) matrix operations. Mixture-of-Experts (MoE) models activate only a subset of experts per token, enabling very large total parameter counts with lower compute cost; hybrid CPU/GPU execution and disk offloading are active research areas for fitting such models into consumer hardware.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2604.18556">[2604.18556] GSQ: Highly-Accurate Low-Precision Scalar ... GSQ: Highly-Accurate Low-Precision Scalar Quantization for ... GitHub - IST-DASLab/GSQ: Gumbel-Softmax post-training ... GSQ: Highly-Accurate Low-Precision Scalar Quantization for ... GSQ - a ISTA-DASLab Collection - Hugging Face GSQ-NVFP4/README.md at main · Godofnothing/GSQ-NVFP4 GSQ: Highly-Accurate Low-Precision Scalar Quantization for ...</a></li>
-<li><a href="https://github.com/IST-DASLab/GSQ/">GitHub - IST-DASLab/GSQ: Gumbel-Softmax post-training ...</a></li>
-<li><a href="https://github.com/IST-DASLab/RCO">GitHub - IST-DASLab/RCO: Implementation for "Model Compression..."</a></li>
+<li><a href="https://readmedium.com/faster-and-smaller-quantized-nlp-with-hugging-face-and-onnx-runtime-ec5525473bb7">Faster and smaller quantized NLP with Hugging Face and ONNX...</a></li>
+<li><a href="https://arxiv.org/html/2601.14277v1">Which Quantization Should I Use? A Unified Evaluation of llama.cpp Quantization on Llama-3.1-8B-Instruct</a></li>
+<li><a href="https://ar5iv.labs.arxiv.org/html/2504.05897">[2504.05897] HybriMoE: Hybrid CPU-GPU Scheduling and Cache Management for Efficient MoE Inference</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#quantization`, `#local-llm`, `#gguf`, `#qwen`, `#model-compression`
+**Tags**: `#llama.cpp`, `#CPU-optimization`, `#local-inference`, `#MoE`, `#open-source`
 
 ---
 
 <a id="item-14"></a>
-## [Micron: HBM Requires Three Times More Wafer Area Than DDR5](https://www.reddit.com/r/LocalLLaMA/comments/1w0mmk7/micron_hbm_requires_three_times_more_wafer_area/) ⭐️ 7.0/10
+## [Terminal Bench 4.0 Released: GLM-5.3 Rivals Top Coding Agents](https://www.reddit.com/r/LocalLLaMA/comments/1w1fpxi/terminal_bench_40_just_dropped_glm53_is_at_the/) ⭐️ 6.0/10
 
-Micron reveals HBM requires 3x more wafer area than DDR5 per GB and this ratio won't improve, explaining the AI-era DRAM shortage as the big three manufacturers pivot capacity to HBM.
+Terminal Bench 4.0 has been released with updated benchmarks for AI coding agents operating in terminal environments. According to the announcement, GLM-5.3 performs at roughly the same level as Fable 5, with the difference falling within the margin of error. This release matters because it provides a fresh evaluation standard for coding agents at a time when many benchmarks are saturating, and the strong showing from GLM-5.3 highlights the competitiveness of non-frontier-tier models. It also raises practical concerns about the cost barrier that prevents most researchers and developers from running these benchmarks themselves. The author highlights Terminal Bench's commitment to rapid iteration to combat benchmark saturation, but notes that a full benchmark run consumes 5-10 billion tokens, making it economically and computationally infeasible for most users. They are seeking cheaper, smaller-scale alternatives for objectively evaluating changes to agent harnesses, tools, and techniques without needing billions of tokens per run.
 
-reddit · r/LocalLLaMA · /u/FullstackSensei · Aug 28, 10:19
+reddit · r/LocalLLaMA · /u/SorosAhaverom · Aug 29, 07:17
 
-**Tags**: `#HBM`, `#DRAM`, `#semiconductors`, `#AI-infrastructure`, `#memory-supply`
+**Background**: Terminal Bench is a collection of harbor-native benchmarks designed to measure how well AI agents can perform tasks in terminal environments, which are central to software development workflows. Benchmark saturation is a well-known problem in LLM evaluation, where top models cluster near the maximum score and the benchmark loses discriminative power; dynamic, frequently updated benchmarks like Terminal Bench attempt to address this. Coding agents are autonomous AI systems that use shell commands, file operations, and other tools to complete programming tasks end-to-end, making terminal-based benchmarks particularly relevant for evaluating their capabilities.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.tbench.ai/">Terminal - Bench</a></li>
+<li><a href="https://www.tbench.ai/?version=3.0">TERMINAL - BENCH</a></li>
+<li><a href="https://benchlm.ai/stats/benchmarks">LLM Benchmark Statistics (2026): Coverage & Saturation Data | BenchLM.ai</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The discussion centers on the practical challenge of benchmarking coding agents at scale. The poster praises Terminal Bench's rapid iteration strategy to fight saturation but raises the cost concern that 5-10B tokens per run is prohibitive for most users, and asks the community for cheaper alternatives to objectively measure changes in agent skills, harness design, and tool usage.
+
+**Tags**: `#benchmarking`, `#coding-agents`, `#GLM-5.3`, `#terminal-bench`, `#LLM-evaluation`
 
 ---
 
 <a id="item-15"></a>
-## [GUIs Should Be Fully Keyboard-Driven](https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html) ⭐️ 6.0/10
+## [Why the Ling-3.0-flash-Fin benchmark card reveals more about methodology than rankings](https://www.reddit.com/r/LocalLLaMA/comments/1w1tfkc/this_financemodel_benchmark_card_is_more_useful/) ⭐️ 6.0/10
 
-A blog post argues that GUIs should be fully keyboard-driven, advocating for consistent keyboard shortcuts across all applications and operating system-level handling of key commands, rather than leaving each program to implement its own bindings. This matters because keyboard-driven interfaces are essential for accessibility—especially for users with motor disabilities or visual impairments—dramatically improve power-user productivity, and promote consistency across applications. The discussion highlights that keyboard accessibility is often overlooked or poorly implemented in modern UI framework development. The comments highlight that older frameworks like Cocoa/AppKit (macOS native UI) historically made keyboard accessibility easier, while modern web frameworks often lack proper focus management and tab navigation support. One commenter stresses that the moment tab focus order breaks, users with disabilities immediately hit a wall.
+A detailed teardown of the Ling-3.0-flash-Fin benchmark card reveals that reported results depend heavily on specific agent scaffolds (ReAct with Web Search/Visit/Python for FinFIRST and FinSearchComp Verified, and Claude Code 2.1.173 for SpreadsheetBench), tool budgets, and mixed internal/external evaluations rather than the raw model itself. This critique matters because finance-domain LLM benchmarks increasingly conflate model capability with agent engineering, and users may misread 'top score' claims as intrinsic model quality when scaffolding and prompt design can swing outcomes significantly. FinSearchComp Verified is an internal 145-question set judged by GPT-5, FinCRAFT is fully internal, and FinFIRST is announced as 'coming soon' rather than public; SpreadsheetBench used a 120 or 300-turn budget with a three-hour timeout, and finance weights remain unpublished with the team indicating they will arrive 'next week.'
 
-hackernews · ckardaris · Aug 28, 15:17 · [Discussion](https://news.ycombinator.com/item?id=49479837)
+reddit · r/LocalLLaMA · /u/niacolhealth · Aug 29, 18:04
 
-**Background**: Keyboard-driven GUIs refer to interfaces where all functionality can be accessed via keyboard shortcuts and tab navigation without requiring a mouse. This concept is central to web accessibility standards such as WCAG (Web Content Accessibility Guidelines), which mandate that all interactive elements be reachable and operable via keyboard. Operating systems have long provided system-wide shortcuts—for example, Alt+Tab for window switching and Ctrl+Home to jump to the top of a document—but individual applications vary widely in how well they implement consistent keyboard navigation and focus management.
-
-**Discussion**: The community discussion reveals broad agreement on the importance of keyboard accessibility, especially for users with disabilities, with one commenter urging developers to test their apps using only a keyboard and OS voice assistant. However, there is a notable counterargument that conflating power-user experience with general user experience is misguided—most users are not willing to learn complex keyboard-driven workflows, and forcing keyboard-first design on everyone could be counterproductive.
-
-**Tags**: `#accessibility`, `#keyboard-shortcuts`, `#GUI-design`, `#UX`, `#software-engineering`
-
----
-
-<a id="item-16"></a>
-## [Inception-style curved map for turn-by-turn directions](https://www.orbify.eu/demo/) ⭐️ 6.0/10
-
-A proof-of-concept navigation interface that uses an Inception-style curved map projection to provide turn-by-turn directions with improved spatial context.
-
-hackernews · smoser · Aug 28, 12:29 · [Discussion](https://news.ycombinator.com/item?id=49477564)
-
-**Tags**: `#navigation`, `#ux-design`, `#visualization`, `#hci`, `#maps`
-
----
-
-<a id="item-17"></a>
-## [The Twelve-Factor App Gets a 2025 Refresh](https://12factor.net/) ⭐️ 6.0/10
-
-The Twelve-Factor App methodology, originally created by Heroku co-founder Adam Wiggins in 2011, has received a 2025 update hosted at 12factor.net. The refreshed document revisits its 12 principles for building portable, resilient SaaS applications and has sparked renewed community discussion about their applicability to modern cloud-native development. The Twelve-Factor App has been a foundational reference for SaaS architects for over a decade, and any update is a useful checkpoint for assessing how cloud-native best practices have evolved. The strong community engagement (236 points, 122 comments) shows that developers still look to it as a baseline, even as platforms like Kubernetes, AWS, and Azure have introduced far more complexity than the Heroku era ever imagined. The most debated factor remains Factor III (Config), which recommends storing configuration in environment variables — a practice now widely seen as problematic for managing secrets, since it has led many developers to commit credentials to shell history or plaintext .env files. Commenters also noted that the 2025 update does not fundamentally change the original 12 principles, so its value is more as a community discussion anchor than as a methodological breakthrough.
-
-hackernews · jxmorris12 · Aug 27, 22:41 · [Discussion](https://news.ycombinator.com/item?id=49472216)
-
-**Background**: The Twelve-Factor App methodology was published in 2011 by Heroku and outlines 12 principles for SaaS application design: codebase, dependencies, config, backing services, build/release/run, processes, port binding, concurrency, disposability, dev/prod parity, logs, and admin processes. It was written in an era dominated by Heroku's simple git-push-to-deploy model, and its core advice — especially treating environment variables as the canonical place for configuration — deeply shaped how SaaS was built for years. Today, with multi-cloud, Kubernetes, and complex secret-management tooling as the norm, developers are re-examining whether these principles still hold up or need to be reinterpreted.
+**Background**: ReAct (Reason + Act) is a prompting framework introduced by Yao et al. in 2022 that interleaves chain-of-thought reasoning with tool-use actions inside an agent loop, making the LLM's effective behavior highly dependent on the surrounding scaffolding rather than the base weights. FinSearchComp is an open-source agent benchmark for realistic financial search and reasoning first described in September 2025. Claude Code is Anthropic's agentic coding tool, capable of running long autonomous sessions against codebases and command-line tools; using it as the harness for an evaluation means the measured performance is a property of the combined model-plus-CLI-agent system, not just the model checkpoint.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology">Twelve-Factor App methodology - Wikipedia</a></li>
-<li><a href="https://kodekloud.com/blog/12-factor-app/">What is 12-Factor App? Twelve Factor App Methodology Explained.</a></li>
+<li><a href="https://www.promptingguide.ai/techniques/react">ReAct Prompting | Prompt Engineering Guide</a></li>
+<li><a href="https://arxiv.org/abs/2509.13160">[2509.13160] FinSearchComp: Towards a Realistic, Expert-Level Evaluation of Financial Search and Reasoning</a></li>
+<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent , Terminal, IDE</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community sentiment is largely nostalgic and reflective rather than dismissive: many commenters praise the document as still highly relevant and worth a 15-minute read, while simultaneously mourning the loss of Heroku-era simplicity when faced with modern cloud platforms like Azure. The most substantive critique targets Factor III (Config), with developers arguing that environment-variable-based config led to dangerous practices like storing secrets in ~/.bashrc. As a practical alternative, one commenter recommended varlock.dev, an open-source tool that adds validation, type-safety, composition, and leak prevention on top of the familiar .env syntax.
-
-**Tags**: `#saas`, `#methodology`, `#software-architecture`, `#devops`, `#heroku`
-
----
-
-<a id="item-18"></a>
-## [Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training](https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training) ⭐️ 6.0/10
-
-OpenAI describes a randomized study of over 1,000 students investigating how ChatGPT and critical-thinking training affect originality and performance on a real-world university assignment.
-
-rss · OpenAI Blog · Aug 27, 09:00
-
-**Tags**: `#AI-in-education`, `#ChatGPT`, `#research-study`, `#critical-thinking`, `#academic-integrity`
-
----
-
-<a id="item-19"></a>
-## [Open ASR Leaderboard Adds First Global South Language](https://huggingface.co/blog/open-asr-leaderboard-global-south) ⭐️ 6.0/10
-
-HuggingFace's Open ASR Leaderboard has added its first Global South language, expanding its evaluation scope beyond its traditional focus on English and European languages. This update represents a deliberate step toward broader linguistic inclusivity in speech recognition benchmarking. ASR benchmarks have long been criticized for underrepresenting languages spoken in the Global South, which limits both the development and fair evaluation of speech models for billions of speakers. Adding such a language to a widely referenced open benchmark signals a growing community commitment to multilingual equity and could pressure other benchmarks to follow suit. The Open ASR Leaderboard is a Gradio-based reproducibility platform run by HuggingFace's hf-audio team that evaluates 60+ open-source and proprietary ASR systems, reporting Word Error Rate (WER) and inverse Real-Time Factor (RTFx). It has historically focused on English short-form, English long-form, and multilingual European-language short-form tracks, so extending coverage to a Global South language fills a well-documented evaluation gap.
-
-rss · HuggingFace Blog · Aug 28, 00:00
-
-**Background**: Automatic Speech Recognition (ASR) is the technology that converts spoken language into written text, powering voice assistants, transcription, accessibility tools, and live captioning. The Open ASR Leaderboard, maintained by HuggingFace, is a widely used community benchmark that compares ASR models on standardized metrics to promote transparency and reproducibility. The term "Global South" broadly refers to nations with relatively lower levels of economic and industrial development, often located south of industrialized countries, and languages from these regions have historically been underrepresented in mainstream NLP and ASR research.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://huggingface.co/spaces/hf-audio/open_asr_leaderboard">Open ASR Leaderboard - a Hugging Face Space by hf-audio</a></li>
-<li><a href="https://github.com/huggingface/open_asr_leaderboard">GitHub - huggingface/open_asr_leaderboard Open ASR Leaderboard: Trends and Insights with New ... open_asr_leaderboard/README.md at main · huggingface/open_asr ... Open ASR Leaderboard: Towards Reproducible and Transparent ... Open ASR Leaderboard: Towards Reproducible and Transparent ... blog/open-asr-leaderboard.md at main · huggingface/blog</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#ASR`, `#speech-recognition`, `#multilingual`, `#HuggingFace`, `#AI-benchmarks`
-
----
-
-<a id="item-20"></a>
-## [给AI Agent装上“科学常识”，端到端仿真成功率从0拉到84%](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247915782&idx=3&sn=edc0d6587aabe5bf1856cb0a9f37abdf) ⭐️ 6.0/10
-
-A reported technique equips AI Agents with a 'scientific common sense' knowledge layer, boosting end-to-end simulation success rates from 0% to 84%.
-
-rss · 量子位 · Aug 27, 13:21
-
-**Tags**: `#AI Agent`, `#Simulation`, `#Scientific Common Sense`, `#Reinforcement Learning`, `#Chinese AI Research`
-
----
-
-<a id="item-21"></a>
-## [ROCm 10.0: A Decade of Open Compute, Built for the Age of Agentic AI](https://www.reddit.com/r/LocalLLaMA/comments/1w0yfmn/rocm_100_a_decade_of_open_compute_built_for_the/) ⭐️ 6.0/10
-
-AMD releases ROCm 10.0, a major version of their open GPU compute platform, with a pending llama.cpp PR for compatibility.
-
-reddit · r/LocalLLaMA · /u/pmttyji · Aug 28, 18:20
-
-**Tags**: `#ROCm`, `#AMD`, `#GPU-computing`, `#llama.cpp`, `#local-llm`
-
----
-
-<a id="item-22"></a>
-## [Running Qwen3.8-Flash on RTX 3090: Detailed Benchmarks and VRAM Optimization](https://www.reddit.com/r/LocalLLaMA/comments/1w0u24k/qwen38flash_on_rtx3090_64gb_ram_but_you_only_need/) ⭐️ 6.0/10
-
-Reddit user crusaderky shared a hands-on deployment report of Qwen3.8-Flash-Next on an RTX 3090 with Ryzen 9 3950X and 64GB DDR RAM, using IQ4_XS weights with KVarN5 KV cache quantization and multi-token prediction (MTP), achieving 160 tok/s prefill and 16 tok/s decode speeds. The report demonstrates that the model can be squeezed down to fit 12GB VRAM by reducing context length and offloading components. This report shows that a 125B-parameter MoE model from the Qwen4 architecture family is practically runnable on consumer-grade hardware, lowering the barrier for local LLM experimentation. It also provides actionable VRAM-versus-host-RAM tradeoff strategies that the local LLM community can replicate or adapt for similar large MoE deployments. MTP actually slowed decode throughput despite 80% draft acceptance because rejected tokens consume host RAM bandwidth via n-gram lookups from SSD. KVarN5 KV quantization was found indistinguishable from q8/q8 on KLD charts for Qwen models, while plain q4_0 KV cache caused measurable quality drops. Fitting into 16GB VRAM requires KVarN4 KV cache and CPU-offloaded vision tower but leaves almost no spare host RAM for other workloads.
-
-reddit · r/LocalLLaMA · /u/crusaderky · Aug 28, 15:40
-
-**Background**: Qwen3.8-Flash-Next is the first open-weight release under the Qwen4 architecture, designed as a 125B-parameter Mixture-of-Experts model that activates only 6B parameters per token, making it more efficient than dense models of similar size. It uses a 51B n-gram table for speculative decoding (called MTP, or Multi-Token Prediction), which is paged from SSD rather than fitting entirely in RAM. KVarN is a variance-normalized KV cache quantization technique originated from Huawei that is available in the beellama fork of llama.cpp and offers better quality-per-bit than standard KV cache quantization methods.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next">Qwen/ Qwen 3 . 8 - Flash - Next · Hugging Face</a></li>
-<li><a href="https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally">How to Run Qwen 3 . 8 Flash Next Locally: GGUF... - Atomic Chat</a></li>
-<li><a href="https://anbeeld.com/articles/kvarn-kv-cache-implementation-and-benchmarks">KVarN KV Cache : Implementation and Benchmarks - Anbeeld</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#local-llm`, `#quantization`, `#qwen`, `#rtx3090`, `#consumer-hardware`
-
----
-
-<a id="item-23"></a>
-## [I benchmarked 9 open models on spotting fake sources during agentic search (DeepSeek V4, Qwen 3.8, Nemotron 3 Ultra)](https://www.reddit.com/r/LocalLLaMA/comments/1w0zl5q/i_benchmarked_9_open_models_on_spotting_fake/) ⭐️ 6.0/10
-
-A Reddit user introduces EchoNet, a benchmark testing how well 9 open-weight LLMs perform 'epistemic arbitration'—deciding whether to trust prior knowledge or new web sources—when faced with seeded misinformation during agentic search.
-
-reddit · r/LocalLLaMA · /u/RevealIndividual7567 · Aug 28, 19:03
-
-**Tags**: `#llm-benchmark`, `#epistemic-robustness`, `#agentic-search`, `#rag`, `#misinformation-detection`, `#open-source-models`
+**Tags**: `#benchmarking`, `#llm-evaluation`, `#finance-models`, `#benchmark-integrity`, `#agent-systems`
 
 ---
